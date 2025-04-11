@@ -1,0 +1,23 @@
+{
+  "name": "backend70375",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon /src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^9.6.0",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "express-handlebars": "^8.0.1",
+    "faker": "^6.6.6",
+    "handlebars": "^4.7.8",
+    "mongoose": "^8.13.2"
+  }
+}
