@@ -36,7 +36,7 @@ export  const getUsersController= async (req,res)=>{
         try {
           const mockUsers = await generateMockUsersService(numUser);
           res.status(201).json(mockUsers); 
-          res.status(400).send(error.message); 
+         
         } catch (error) {
           res.status(400).send(error.message); 
       }

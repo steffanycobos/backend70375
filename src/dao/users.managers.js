@@ -26,7 +26,7 @@ class UserManagerDB {
 async generateMockUsers(x) {
   const users = []; 
   for (let i = 0; i < x ; i++) {
-      const user = await UserModel.create({ 
+      const user = ({ 
         first_name: faker.person.firstName(),
         last_name: faker.person.lastName(),
         age: faker.number.int({ min: 18, max: 90 }) ,
@@ -37,6 +37,7 @@ async generateMockUsers(x) {
          
       });
       users.push(user); 
+      
   }
   return users;
 }

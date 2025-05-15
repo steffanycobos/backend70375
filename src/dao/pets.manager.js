@@ -30,7 +30,7 @@ class PetsManagerDB {
   async generateMockPets(numPets) {
     const pets = [];
     for (let i = 0; i < numPets; i++) {
-      const pet = await petModel.create({
+      const pet =({
         name: faker.animal.petName(),
         specie: faker.helpers.arrayElement([
           "Perro",
